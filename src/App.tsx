@@ -29,7 +29,6 @@ function App(): React.JSX.Element {
     'C#',
   ];
   const playAudio = (note: string, index: number): void => {
-    console.log(index);
     const sharps = ['C', 'F'];
     const flats = ['A', 'B', 'E'];
     let clickNote = '';
@@ -63,7 +62,7 @@ function App(): React.JSX.Element {
         clickNote = `low${note.charAt(0).toLowerCase()}flat`;
       }
     }
-    console.log('clicknote--', clickNote);
+
     const sound = new Sound(`${clickNote}.wav`, Sound.MAIN_BUNDLE, error => {
       if (error) {
         console.log('Error loading sound: ', error);
