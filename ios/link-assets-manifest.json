@@ -48,6 +48,30 @@
     {
       "path": "src/audios/g.mp3",
       "sha1": "5425f607534ddba2739dfc373621e864cfdf6615"
+    },
+    {
+      "path": "src/audios/highc.mp3",
+      "sha1": "37c7732380072bfc774fdc9f91ea78fc078e7170"
+    },
+    {
+      "path": "src/audios/highcsharp.mp3",
+      "sha1": "ce347fede68af02b779b8cc13c6bb271168489b6"
+    },
+    {
+      "path": "src/audios/lowa.mp3",
+      "sha1": "e137d8290cea1bc51124f906b61694060d5e592b"
+    },
+    {
+      "path": "src/audios/lowaflat.mp3",
+      "sha1": "a8cc25a51fa1f77887b28791f7d291fae7800683"
+    },
+    {
+      "path": "src/audios/lowb.mp3",
+      "sha1": "8a4f9ff133b040b11af01dd05f0e63f8b5d7676b"
+    },
+    {
+      "path": "src/audios/lowbflat.mp3",
+      "sha1": "408680080d5299ec2c01fef6f14440402573dd48"
     }
   ]
 }

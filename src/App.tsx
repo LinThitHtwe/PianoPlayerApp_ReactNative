@@ -29,6 +29,7 @@ function App(): React.JSX.Element {
     'C#',
   ];
   const playAudio = (note: string, index: number): void => {
+    console.log(index);
     const sharps = ['C', 'F'];
     const flats = ['A', 'B', 'E'];
     let clickNote = '';
@@ -43,6 +44,26 @@ function App(): React.JSX.Element {
       }
     }
 
+    const lowOctaves = ['A', 'B'];
+    const highOctaves = ['C'];
+
+    if (highOctaves.includes(note.charAt(0)) && index > 15) {
+      console.log('low');
+      if (note.length == 1) {
+        clickNote = `high${note.toLocaleLowerCase()}`;
+      } else {
+        clickNote = `high${note.charAt(0).toLowerCase()}sharp`;
+      }
+    }
+
+    if (lowOctaves.includes(note.charAt(0)) && index < 4) {
+      if (note.length == 1) {
+        clickNote = `low${note.toLocaleLowerCase()}`;
+      } else {
+        clickNote = `low${note.charAt(0).toLowerCase()}flat`;
+      }
+    }
+    console.log('clicknote--', clickNote);
     const sound = new Sound(`${clickNote}.wav`, Sound.MAIN_BUNDLE, error => {
       if (error) {
         console.log('Error loading sound: ', error);

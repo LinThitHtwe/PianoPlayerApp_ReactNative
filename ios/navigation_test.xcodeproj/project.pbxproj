@@ -26,6 +26,12 @@
 		7CD96388F64F400EAFDE0C8A /* f.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = DCB215B605404AD784E1C377 /* f.mp3 */; };
 		4BB61DB55E514E0D8A9EA17D /* fsharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 250A12C2F84642A3B2BC5875 /* fsharp.mp3 */; };
 		7BFBE5B95E1F48209E2E7C42 /* g.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = ACF8596E38B24F0385751B53 /* g.mp3 */; };
+		545EEE5B703D462DBC7EA2EE /* highcsharp.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = CB99E014B3C84CB9B47EA60B /* highcsharp.mp3 */; };
+		A0D4DD63C62746F3A3F3F96F /* lowa.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = E5F82DB2132F4E56833ECE9B /* lowa.mp3 */; };
+		9F2CD5B42EFB4AB2BF62820F /* lowaflat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = B6F5E8E01D1B4D39A503D1D6 /* lowaflat.mp3 */; };
+		DB0C3BDA3D2E4ED99213E3D7 /* lowb.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 73A5A7FEA80E4EA4B39E6D3C /* lowb.mp3 */; };
+		27A82E5C1D3046CFADB4B38F /* lowbflat.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A8F0E4D79B24FDF922A36C5 /* lowbflat.mp3 */; };
+		80AE0048F79440DF9231212C /* highc.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = FF474C89C9EC4398A50BDB28 /* highc.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +74,12 @@
 		DCB215B605404AD784E1C377 /* f.mp3 */ = {isa = PBXFileReference; name = "f.mp3"; path = "../src/audios/f.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		250A12C2F84642A3B2BC5875 /* fsharp.mp3 */ = {isa = PBXFileReference; name = "fsharp.mp3"; path = "../src/audios/fsharp.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		ACF8596E38B24F0385751B53 /* g.mp3 */ = {isa = PBXFileReference; name = "g.mp3"; path = "../src/audios/g.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB99E014B3C84CB9B47EA60B /* highcsharp.mp3 */ = {isa = PBXFileReference; name = "highcsharp.mp3"; path = "../src/audios/highcsharp.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5F82DB2132F4E56833ECE9B /* lowa.mp3 */ = {isa = PBXFileReference; name = "lowa.mp3"; path = "../src/audios/lowa.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B6F5E8E01D1B4D39A503D1D6 /* lowaflat.mp3 */ = {isa = PBXFileReference; name = "lowaflat.mp3"; path = "../src/audios/lowaflat.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		73A5A7FEA80E4EA4B39E6D3C /* lowb.mp3 */ = {isa = PBXFileReference; name = "lowb.mp3"; path = "../src/audios/lowb.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2A8F0E4D79B24FDF922A36C5 /* lowbflat.mp3 */ = {isa = PBXFileReference; name = "lowbflat.mp3"; path = "../src/audios/lowbflat.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		FF474C89C9EC4398A50BDB28 /* highc.mp3 */ = {isa = PBXFileReference; name = "highc.mp3"; path = "../src/audios/highc.mp3"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,6 +200,12 @@
 				DCB215B605404AD784E1C377 /* f.mp3 */,
 				250A12C2F84642A3B2BC5875 /* fsharp.mp3 */,
 				ACF8596E38B24F0385751B53 /* g.mp3 */,
+				CB99E014B3C84CB9B47EA60B /* highcsharp.mp3 */,
+				E5F82DB2132F4E56833ECE9B /* lowa.mp3 */,
+				B6F5E8E01D1B4D39A503D1D6 /* lowaflat.mp3 */,
+				73A5A7FEA80E4EA4B39E6D3C /* lowb.mp3 */,
+				2A8F0E4D79B24FDF922A36C5 /* lowbflat.mp3 */,
+				FF474C89C9EC4398A50BDB28 /* highc.mp3 */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -300,6 +318,12 @@
 				7CD96388F64F400EAFDE0C8A /* f.mp3 in Resources */,
 				4BB61DB55E514E0D8A9EA17D /* fsharp.mp3 in Resources */,
 				7BFBE5B95E1F48209E2E7C42 /* g.mp3 in Resources */,
+				545EEE5B703D462DBC7EA2EE /* highcsharp.mp3 in Resources */,
+				A0D4DD63C62746F3A3F3F96F /* lowa.mp3 in Resources */,
+				9F2CD5B42EFB4AB2BF62820F /* lowaflat.mp3 in Resources */,
+				DB0C3BDA3D2E4ED99213E3D7 /* lowb.mp3 in Resources */,
+				27A82E5C1D3046CFADB4B38F /* lowbflat.mp3 in Resources */,
+				80AE0048F79440DF9231212C /* highc.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
