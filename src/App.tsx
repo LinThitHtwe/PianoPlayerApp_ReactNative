@@ -1,7 +1,11 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
-import SoundPlayer from 'react-native-sound-player';
 import Sound from 'react-native-sound';
+
+type onPressProps = {
+  note: string;
+  index: number;
+};
 
 function App(): React.JSX.Element {
   const notes = [
@@ -24,22 +28,26 @@ function App(): React.JSX.Element {
     'C',
     'C#',
   ];
-  const playAudio = () => {
-    const sound = new Sound('c.mp3', Sound.MAIN_BUNDLE, error => {
-      if (error) {
-        console.log('Error loading sound: ', error);
-        return;
-      }
-
-      sound.play(success => {
-        // if (success) {
-        //   console.log('Successfully played the sound');
-        // } else {
-        //   console.log('Error playing sound');
-        // }
-        sound.release();
-      });
-    });
+  const playAudio = (note: string, index: number): void => {
+    let clickNote = '';
+    if (note.length == 1) {
+      clickNote = note;
+    } else {
+      console.log(note.charAt(0));
+    }
+    const sound = new Sound(
+      `${note.toLowerCase()}.mp3`,
+      Sound.MAIN_BUNDLE,
+      error => {
+        if (error) {
+          console.log('Error loading sound: ', error);
+          return;
+        }
+        sound.play(success => {
+          sound.release();
+        });
+      },
+    );
   };
 
   return (
@@ -52,13 +60,16 @@ function App(): React.JSX.Element {
               <TouchableOpacity
                 key={index}
                 style={styles.whiteKey}
-                onPress={playAudio}>
+                onPressIn={() => playAudio(note, index)}>
                 <Text style={styles.whiteKeyText}>{note}</Text>
               </TouchableOpacity>
             )}
 
             {note.length > 1 && (
-              <TouchableOpacity key={index} style={styles.blackKey}>
+              <TouchableOpacity
+                onPressIn={() => playAudio(note, index)}
+                key={index}
+                style={styles.blackKey}>
                 <Text style={styles.blackKeyText}>{note}</Text>
               </TouchableOpacity>
             )}

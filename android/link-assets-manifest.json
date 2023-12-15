@@ -2,8 +2,52 @@
   "migIndex": 1,
   "data": [
     {
-      "path": "src/audios/c.mp3",
-      "sha1": "aa555ec7b844cdf0ad19b288366922e2c6c1ddf6"
+      "path": "src/audios/a.wav",
+      "sha1": "7641b136e28ea83b6ee1b060a6a8db247cf1bc2d"
+    },
+    {
+      "path": "src/audios/aflat.wav",
+      "sha1": "a1bca556ada3e349778d39ae3822044f7eb89fee"
+    },
+    {
+      "path": "src/audios/b.wav",
+      "sha1": "68d2749552a0edd49c4f8aced8fe78901b4eceb3"
+    },
+    {
+      "path": "src/audios/bflat.wav",
+      "sha1": "a5b8e9bbb908b29ce7ec9a56ce64fbd668a1495c"
+    },
+    {
+      "path": "src/audios/c.wav",
+      "sha1": "1c9e2c7fee016f842e799264a645df3bbd9e1b8f"
+    },
+    {
+      "path": "src/audios/csharp.wav",
+      "sha1": "a90e767513569a2c2ba84315668b55c9b6d21dea"
+    },
+    {
+      "path": "src/audios/d.wav",
+      "sha1": "104cbe4dcc1c8b732962b83e3cab93049a313288"
+    },
+    {
+      "path": "src/audios/e.wav",
+      "sha1": "4ddeeb45822f2518cc8d2f13885c07d68c11c8ba"
+    },
+    {
+      "path": "src/audios/eflat.wav",
+      "sha1": "1af83c87f928fc4444f0f22ba06774c1ecff054f"
+    },
+    {
+      "path": "src/audios/f.wav",
+      "sha1": "a02118036de542aaa2c2c4c633bc02f84a27b4d0"
+    },
+    {
+      "path": "src/audios/fsharp.wav",
+      "sha1": "7a179e779e99a0e912889d94449e6d04e8cd8f08"
+    },
+    {
+      "path": "src/audios/g.wav",
+      "sha1": "5425f607534ddba2739dfc373621e864cfdf6615"
     }
   ]
 }
