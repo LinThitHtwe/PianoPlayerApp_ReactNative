@@ -29,25 +29,29 @@ function App(): React.JSX.Element {
     'C#',
   ];
   const playAudio = (note: string, index: number): void => {
+    const sharps = ['C', 'F'];
+    const flats = ['A', 'B', 'E'];
     let clickNote = '';
     if (note.length == 1) {
-      clickNote = note;
+      clickNote = note.toLocaleLowerCase();
     } else {
-      console.log(note.charAt(0));
+      const firstChar = note.charAt(0);
+      if (sharps.includes(firstChar)) {
+        clickNote = `${firstChar.toLowerCase()}sharp`;
+      } else if (flats.includes(firstChar)) {
+        clickNote = `${firstChar.toLowerCase()}flat`;
+      }
     }
-    const sound = new Sound(
-      `${note.toLowerCase()}.mp3`,
-      Sound.MAIN_BUNDLE,
-      error => {
-        if (error) {
-          console.log('Error loading sound: ', error);
-          return;
-        }
-        sound.play(success => {
-          sound.release();
-        });
-      },
-    );
+
+    const sound = new Sound(`${clickNote}.wav`, Sound.MAIN_BUNDLE, error => {
+      if (error) {
+        console.log('Error loading sound: ', error);
+        return;
+      }
+      sound.play(success => {
+        sound.release();
+      });
+    });
   };
 
   return (
