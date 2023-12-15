@@ -19,3 +19,63 @@ buildscript {
 }
 
 apply plugin: "com.facebook.react.rootproject"
+
+
+// buildscript {
+//     ext {
+//         buildToolsVersion = "34.0.0"
+//         minSdkVersion = 21
+//         compileSdkVersion = 34
+//         targetSdkVersion = 34
+//         ndkVersion = "25.1.8937393"
+//         kotlinVersion = "1.5.21"  // Update to the latest Kotlin version
+//         gradlePluginVersion = "7.0.2"  // Update to the latest Gradle plugin version
+//     }
+//     repositories {
+//         google()
+//         mavenCentral()
+//     }
+//     dependencies {
+//         classpath("com.android.tools.build:gradle:$gradlePluginVersion")
+//         classpath("com.facebook.react:react-native-gradle-plugin:7.0.2")
+//         classpath("org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion")
+//     }
+// }
+
+// apply plugin: "com.android.application"
+// apply plugin: "com.facebook.react.application"
+// apply plugin: "kotlin-android"
+
+// android {
+//     compileSdkVersion rootProject.ext.compileSdkVersion
+
+//     defaultConfig {
+//         applicationId "com.yourappname"  // Replace with your app's package name
+//         minSdkVersion rootProject.ext.minSdkVersion
+//         targetSdkVersion rootProject.ext.targetSdkVersion
+//         versionCode 1
+//         versionName "1.0"
+//     }
+
+//     buildTypes {
+//         debug {
+//             minifyEnabled true
+//             shrinkResources true
+//             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+//         }
+//         release {
+//             minifyEnabled true
+//             shrinkResources true
+//             proguardFiles getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro"
+//         }
+//     }
+
+//     packagingOptions {
+//         pickFirst 'META-INF/proguard/androidx-annotations.pro'
+//     }
+
+//     kotlinOptions {
+//         jvmTarget = '1.8'
+//     }
+// }
+

@@ -1,5 +1,7 @@
 import React from 'react';
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
+import SoundPlayer from 'react-native-sound-player';
+import Sound from 'react-native-sound';
 
 function App(): React.JSX.Element {
   const notes = [
@@ -15,28 +17,48 @@ function App(): React.JSX.Element {
     'F',
     'F#',
     'G',
-    'G#',
+    'Ab',
     'A',
     'Bb',
     'B',
     'C',
     'C#',
   ];
+  const playAudio = () => {
+    const sound = new Sound('c.mp3', Sound.MAIN_BUNDLE, error => {
+      if (error) {
+        console.log('Error loading sound: ', error);
+        return;
+      }
+
+      sound.play(success => {
+        // if (success) {
+        //   console.log('Successfully played the sound');
+        // } else {
+        //   console.log('Error playing sound');
+        // }
+        sound.release();
+      });
+    });
+  };
 
   return (
     <View style={styles.mainContainer}>
       <Text style={styles.mainTitle}>Press any key to play piano •⩊•</Text>
       <View style={styles.pianoContainer}>
         {notes.map((note, index) => (
-          <View>
+          <View key={index}>
             {note.length == 1 && (
-              <TouchableOpacity key={index} style={styles.whiteKey}>
+              <TouchableOpacity
+                key={index}
+                style={styles.whiteKey}
+                onPress={playAudio}>
                 <Text style={styles.whiteKeyText}>{note}</Text>
               </TouchableOpacity>
             )}
 
             {note.length > 1 && (
-              <TouchableOpacity style={styles.blackKey}>
+              <TouchableOpacity key={index} style={styles.blackKey}>
                 <Text style={styles.blackKeyText}>{note}</Text>
               </TouchableOpacity>
             )}
@@ -50,7 +72,7 @@ function App(): React.JSX.Element {
 const styles = StyleSheet.create({
   mainContainer: {
     flex: 1,
-    backgroundColor: '#B7E5C5',
+    backgroundColor: '#bfbfbf',
     paddingHorizontal: 20,
     height: 'auto',
     width: 'auto',
@@ -65,7 +87,12 @@ const styles = StyleSheet.create({
     paddingBottom: 12,
   },
 
-  pianoContainer: {gap: 2, flexDirection: 'row', overflow: 'hidden'},
+  pianoContainer: {
+    gap: 2,
+    flexDirection: 'row',
+    overflow: 'hidden',
+    borderRadius: 10,
+  },
 
   whiteKey: {
     flexDirection: 'column',

@@ -12,7 +12,10 @@
   "dependencies": {
     "react": "18.2.0",
     "react-native": "0.73.0",
-    "react-native-orientation-locker": "^1.6.0"
+    "react-native-asset": "^2.1.1",
+    "react-native-orientation-locker": "^1.6.0",
+    "react-native-sound": "^0.11.2",
+    "react-native-sound-player": "^0.13.2"
   },
   "devDependencies": {
     "@babel/core": "^7.20.0",
